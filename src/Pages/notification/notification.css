@@ -1,0 +1,16 @@
+.page-notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #24292E;
+    height: 100vh;
+}
+
+.page-notification > h1 {
+    color: #FFFFFF;
+}
+
+.back {
+    padding-left: 2rem;
+    color: #FFFFFF;
+}

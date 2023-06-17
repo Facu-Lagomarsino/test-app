@@ -1,0 +1,163 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #24292E;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.navbar-button {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-custome {
+    display: none;
+}
+
+.navbar-custome.isActive {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #2D3339;
+    color: #13B497;
+    height: 4rem;
+    position: absolute;
+    z-index: 100;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar-item {
+    list-style: none;
+    padding: .5rem;
+}
+
+.logo {
+    width: 70px;
+    padding: 15px 0;
+}
+
+.top-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.top-search .icon-settings {
+    background-color: #13B497;
+    padding: 7px;
+    width: 40px;
+    border-radius: 12px;
+}
+
+.search{
+    position: relative;
+}
+
+.search > input {
+    border: none;
+    height: 2rem;
+    width: 22rem;
+    border-radius: 12px;
+    padding-left: 1rem;
+    background-color: #1C2126;
+}
+
+.search > input::placeholder {
+    border-left: 1px solid #13B497;
+    padding-left: .5rem;
+    color: #2F363D;
+}
+
+.top-search .icon-search {
+    position: absolute;
+    background: transparent;
+    right: 1rem;
+    border: none;
+    top: 0.2rem;
+}
+
+.icon-search > img {
+    width: 17px;
+}
+
+.top-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    gap: 15px;
+    margin-right: 2rem;
+}
+
+.icon-btn {
+    position: relative;
+    background-color: #2F363D;
+    padding: 7px;
+    width: 40px;
+    border-radius: 12px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 5px;
+    height: 5px;
+    background-color: #D9B75F;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.counter.clean {
+    background-color: #647280;
+}
+
+.top-right .dropdown {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+}
+
+.top-profile > img {
+    width: 40px;
+    margin-right: .5rem;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .top-search {
+        display: none;
+    }
+
+    .responsive {
+        display: none;
+    }
+
+    .dropdown > span {
+        display: none;
+    }
+}
